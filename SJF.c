@@ -98,7 +98,7 @@ void calculateAWT(int n, PCB P[]) {
     for (int i = 0; i < n; i++) {
         totalWaiting += P[i].iWaiting;
     }
-    printf("Average Waiting Time: %.2f\n", (float)totalWaiting / n);
+    printf("AVG waiting time: %.2f\n", (float)totalWaiting / n);
 }
 
 void calculateATaT(int n, PCB P[]) {
@@ -106,7 +106,7 @@ void calculateATaT(int n, PCB P[]) {
     for (int i = 0; i < n; i++) {
         totalTaT += P[i].iTaT;
     }
-    printf("Average Turnaround Time: %.2f\n", (float)totalTaT / n);
+    printf("AVG turnaround time: %.2f\n", (float)totalTaT / n);
 }
 
 int main() {

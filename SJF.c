@@ -23,7 +23,9 @@ void inputProcess(int n, PCB P[]) {
 void printProcess(int n, PCB P[]) {
     printf("PID\tArrival\tBurst\tStart\tFinish\tWaiting\tResponse\tTurnaround\n");
     for (int i = 0; i < n; i++) {
-        printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t\t%d\n", P[i].iPID, P[i].iArrival, P[i].iBurst, P[i].iStart, P[i].iFinish, P[i].iWaiting, P[i].iResponse, P[i].iTaT);
+        printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t\t%d\n", 
+	P[i].iPID, P[i].iArrival, P[i].iBurst, P[i].iStart,
+	P[i].iFinish, P[i].iWaiting, P[i].iResponse, P[i].iTaT);
     }
 }
 

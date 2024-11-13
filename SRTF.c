@@ -124,7 +124,7 @@ int main() {
 
         // Xử lý khi tiến trình hoàn thành
         if (rt[minid] == 0) {
-            Input[minid].iFinish = curtime;
+            Input[minid].iFinish = curtime + 1;
             Input[minid].iTaT = Input[minid].iFinish - Input[minid].iArrival;
             Input[minid].iWaiting = Input[minid].iTaT - Input[minid].iBurst;
             complete++;
